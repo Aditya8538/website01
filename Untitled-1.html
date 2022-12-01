@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head> </head>
+<body>
+<script>
+
+
+	function validate()
+	{
+	var name= document.myform.name.value;
+	var password= document.myform.password.value;
+		if (name==null || name=="")
+		{
+		alert("name can't be blank");
+			return false;
+		     }
+		else if(password.length<6)
+		{
+		 alert("password must be atleast 6 digits");
+			return false;
+		     }
+	}
+		
+
+</script>
+
+<form name= "myform" action = "https://www.youtube.com/" method="post" onsubmit= "validate()" >
+
+USERNAME:<INPUT TYPE="TEXT" name= "name"></BR>
+PASSWORD:<INPUT TYPE="PASSWORD" name = "password"></BR>
+<INPUT TYPE="SUBMIT" VALUE = "LOGIN">
+
+
+</form>
+</body>
+
+
+</html>
